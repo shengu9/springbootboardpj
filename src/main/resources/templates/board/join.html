@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>join</title>
+  <link rel="stylesheet" th:href="@{/css/board/join.css}">
+</head>
+<body>
+<div th:replace="~{fragments/common/header :: headerFragment}"></div>
+
+<div class="container">
+  <div class="join">
+    <div class="join-con">
+      <div class="join-page">
+        <form th:action="@{/board/join}" method="post">
+        <ul>
+          <li>
+          <h1 class="title">글 작성</h1>
+          </li>
+          <li>
+            <label for="id">id</label>
+            <input type="text" name="id" id="id" placeholder="등록회원아이디">
+          </li>
+          <li>
+            <label for="title">title</label>
+            <input type="text" name="title" id="title">
+          </li>
+          <li>
+            <label for="content">content</label>
+            <input type="text" name="content" id="content">
+          </li>
+          <li>
+            <label for="writer">writer</label>
+            <input type="text" name="writer" id="writer">
+          </li>
+          <li>
+            <input type="submit" value="글작성실행">
+          </li>
+        </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div th:replace="~{fragments/common/footer :: footerFragment}"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@import url(common/reset.css);
+@import url(common/header.css);
+@import url(common/footer.css);
+/* index */
+
+.container{
+    width : 100%
+
+}
+
+.container .index{
+    width: 100%;
+    height: calc(100vh - 90px - 200px);
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.container .index .index-con{
+    flex-basis: 1600px;
+    min-height: 600px;
+    background-color: aliceblue;
+    font-size: 50px;
+
+}    

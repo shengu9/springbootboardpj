@@ -1,0 +1,4 @@
+@import url(/css/common/reset.css);  /* /기본패스경우(서버)    */
+@import url(/css/common/header.css);
+@import url(../common/footer.css); /*내파일 기준으로 한단계위 ..*/
+/* member_join */

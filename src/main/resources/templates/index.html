@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+<!-- th:block -->
+<!--<th:block th:replace="~{fragments/common/header :: headerFragment}">-->
+<!--  -->
+<!--</th:block>-->
+<!-- - templates/fragments/common/ header.html   th:fragment="headerFragment" -->
+<div th:replace="~{fragments/common/header :: headerFragment}">  </div>
+<div class="container">
+    <div class="index">
+        <div class="index-con">
+            index
+        </div>
+    </div>
+</div>
+<div th:replace="~{fragments/common/footer :: footerFragment}">  </div>
+</body>
+</html>
